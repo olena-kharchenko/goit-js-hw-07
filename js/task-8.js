@@ -23,14 +23,9 @@ const createBoxes = function (amount) {
       const element = document.createElement('div');
       element.style.width = String(20 + i * 10) + 'px';
       element.style.height = String(20 + i * 10) + 'px';
-      element.style.backgroundColor =
-        'rgb(' +
-        getRandomInt(255) +
-        ',' +
-        getRandomInt(255) +
-        ',' +
-        getRandomInt(255) +
-        ')';
+      element.style.backgroundColor = `rgb(${getRandomInt(255)},${getRandomInt(
+        255,
+      )},${getRandomInt(255)})`;
 
       divs.push(element);
     }
